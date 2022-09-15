@@ -36,6 +36,8 @@
 
 :root{
   --verde: rgb(78, 185, 78);
+  --azul-oscuro: #0E185F;
+  --amarillo: #f3d021;
 }
 
 html{
@@ -45,6 +47,9 @@ html{
 img{
   width: 100%;
 }
+
+
+/* ## header ## */
 
 header a{
   text-decoration: none;
@@ -69,7 +74,7 @@ header #a-logo:hover{
 }
 
 header #a-tickets{
-  background-color: #f3d021;
+  background-color: var(--amarillo);
   color: #000;
   border-radius: 1rem;
   margin-left: 1.4rem;
@@ -150,6 +155,118 @@ header section a:hover{
 header section button:hover{
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+/*## main ##*/
+
+/* oradores */
+main{
+  padding: 4rem 0;
+}
+
+main h2{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#oradores{
+  min-height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#oradores article{
+  width: 30%;
+}
+
+#contenedor-img{
+  height: 42rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#contenedor-img img{
+  position: relative;
+  top: -9rem;
+}
+
+#oradores article:last-child img{
+  top: -3rem;
+}
+
+#contenedor-txt{
+  padding: 2rem;
+  color: var(--azul-oscuro);
+  font-weight: 600;
+  border: 0.1rem solid;
+  font-size: 1.4rem;
+}
+
+#contenedor-txt h3{
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+#contenedor-txt span{
+  background-color: var(--amarillo);
+  border-radius: 0.6rem;
+}
+
+#contenedor-txt p{
+  margin-top: 1rem;
+}
+
+/* datos conferencia */
+#datosConf{
+  background-image: url(../media/space.jpeg);
+  padding: 4rem 14rem;
+  color: #fff;
+}
+
+#datosConf p:first-of-type{
+  border: 0.4rem solid #0d1a82;
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#datosConf p span{
+  font-weight: 700;
+}
+
+
+#datosConf ul{
+  list-style: none;
+  font-size: 1.8rem;
+  width: 40%;
+  margin: auto;
+}
+
+#datosConf ul li{
+  margin-bottom: 2rem;
+}
+
+#datosConf ul span{
+  display: inline-block;
+  margin-right: 4rem;
+  background-color: transparent;
+  padding: 1.4rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  box-shadow: -0.1rem -0.1rem 0.6rem grey;
+}
+
+ul #primer-li span{
+  margin-right: 5.2rem;
+}
+
+/* sponsors */
+#contenedor-sponsors{
+  padding: 4rem;
 }
 
 /* ##########################################################3 */

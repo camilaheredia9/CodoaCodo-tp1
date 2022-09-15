@@ -13,12 +13,11 @@
         <div>
             <a id="a-logo" href="index.html">
                 <img src="./assets/media/codoacodo.png" alt="Logo Codo a Codo">
-                Conf Bs As
+                TechConf
             </a>
     
             <nav>
-                <a href="#conferencia">La conferencia</a>
-                <a href="#oradores">Los oradores</a>
+                <a href="#ancla-oradores">Los oradores</a>
                 <a href="#datosConf">El lugar y la fecha</a>
                 <a href="#formulario">Conviértete en orador</a>
                 <a id="a-tickets" href="#comprar">Comprar tickets</a>
@@ -27,9 +26,9 @@
 
         <!-- bg image -->
         <section>
-            <h1>Conf Bs As</h1>
+            <h1>TechConf Bs As</h1>
             <p>
-                Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creados el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+                La TechConf llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creados el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
             </p>
             <div>
                 <button type="button">
@@ -43,39 +42,76 @@
     </header>
 
     <!-- main -->
-    <main class="container-fluid">
-        <section id="oradores" class="container-lg">
-            <h1>Conocé a los oradores</h1>
-
-
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/media/p2.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Guillermo Morales</h5>
-                  <span>Q&A: Hablemos del futuro de la web</span>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis rerum adipisci exercitationem quaerat, consequatur harum? Assumenda nostrum corporis.</p>
+    <main id="ancla-oradores" class="container-fluid">
+        <!-- oradores -->
+        <h2>CONOCE A LOS ORADORES</h2>
+        <section id="oradores" class="container-sm">
+            <article>
+                <div id="contenedor-img">
+                    <img src="./assets/media/p1.jpeg" alt="Brenda Rimolli">
                 </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/media/p1.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Brenda Rimolli</h5>
-                  <span>Cómo crecer profesionalmente y generar un impacto en los demás</span>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis rerum adipisci exercitationem quaerat, consequatur harum? Assumenda nostrum corporis.</p>
+                <div id="contenedor-txt">
+                    <h3>Brenda Rimolli</h3>
+                    <span>Cómo generar un impacto en los demás.</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis rerum adipisci exercitationem quaerat, consequatur harum. Assumenda nostrum.</p>
                 </div>
-            </div>
+            </article>
 
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/media/p3.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Roberto Vercinacci</h5>
-                  <span>Consejos para entrevistas, simulacro con recruiters y mucho más</span>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis rerum adipisci exercitationem quaerat, consequatur harum? Assumenda nostrum corporis.</p>
+            <article>
+                <div id="contenedor-img">
+                    <img src="./assets/media/p2.jpeg" alt="Guillermo Morales">
                 </div>
-            </div>
+                <div id="contenedor-txt">
+                    <h3>Guillermo Morales</h3>
+                    <span>Q&A: Hablemos del futuro de la web.</span> <br>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis rerum adipisci exercitationem quaerat, consequatur harum. Assumenda nostrum.</p>
+                </div>
+            </article>
+
+            <article>
+                <div id="contenedor-img">
+                    <img src="./assets/media/p3.webp"  alt="Roberto Vercinacci">
+                </div>
+                <div id="contenedor-txt">
+                    <h3>Roberto Vercinacci</h3>
+                    <span>Consejos para entrevistas y simulacro con recruiters.</span>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis rerum adipisci exercitationem quaerat, consequatur harum. Assumenda nostrum.</p>
+                </div>
+            </article>
         </section>
-    </main>
 
+        <section id="datosConf" class="container-fluid">
+            <h2>No te pierdas esta oportunidad única para impulsar tu carrera</h2>
+            <p>
+                Será un evento para toda la comunidad IT donde vamos a festejar el día de la programación con charlas, workshops, espacios de coworking, stands y sorteos. 
+                <span> Recordá que los cupos son limitados. No te quedes afuera! </span>
+            </p>
+            
+            <ul>
+                <li id="primer-li">
+                    <span>¿Dónde?</span>Av. Córdoba 151, CABA
+                </li>
+                <li>
+                    <span>¿Cuándo?</span> Martes 13/09, de 9 a 18hr
+                </li>
+            </ul>
+        </section>
+
+        <article id="contenedor-sponsors" class="container-sm">
+            <h2>¿Quiénes nos acompañan?</h2>
+            <div class="sponsors">
+                <img src="./assets/media/aws.png" alt="logo AWS">
+            </div>
+            <div>
+                <img src="./assets/media/sysarmy.png" alt="logo sysarmy">
+            </div>
+            <div>
+                <img src="./assets/media/ey.png" alt="logo EY">
+            </div>
+            <div>
+                <img src="./assets/media/Salesforce.png" alt="logo Salesforce">
+            </div>
+        </article>
+    </main>
 </body>
 </html>
