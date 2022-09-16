@@ -1,3 +1,6 @@
+/* MODIFICAR BOTONES DE LA SECTION DEL HEADER */
+
+
 @charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
@@ -10853,7 +10856,6 @@ textarea.form-control-lg {
 /*# sourceMappingURL=bootstrap.css.map */
 
 /* #############################################################3 */
-
 :root{
   --verde: rgb(78, 185, 78);
   --azul-oscuro: #0E185F;
@@ -10962,7 +10964,7 @@ header section h1{
   margin-bottom: 1rem;
 }
 
-header section button{
+header section div button{
   width: 35%;
   padding: 0.6rem;
   border-radius: 0.4rem;
@@ -10977,7 +10979,6 @@ header section div a{
 header section div button:first-child{
   background-color: transparent;
   border: 0.2rem solid #fff;
-
 }
 
 header section div button:last-child{
@@ -10994,17 +10995,36 @@ header section button:hover{
   transition: 0.3s;
 }
 
+header section h1,
+header section p,
+header section div{
+  animation: backInDown;
+  animation-delay: 0.2s;
+  animation-duration: 2s;
+}
+
+@media (min-width: 1200px){
+
+  header section{
+    padding: 8rem;
+  }
+
+  header section h1,
+  header section p,
+  header section div{
+    width: 70%;
+  }
+
+}
+
 /*## main ##*/
 
 /* oradores */
-main{
-  padding: 4rem 0;
-}
 
 main h2{
   font-size: 4rem;
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 
 #oradores{
@@ -11015,12 +11035,15 @@ main h2{
 
 #oradores article{
   width: 30%;
+  margin-bottom: 4rem;
 }
 
 .contenedor-img{
   height: 42rem;
   overflow: hidden;
   position: relative;
+  border-radius: 0.8rem 0.8rem 0 0;
+  box-shadow: 0.1rem 0.1rem 1rem gray;
 }
 
 .contenedor-img img{
@@ -11036,8 +11059,9 @@ main h2{
   padding: 2rem;
   color: var(--azul-oscuro);
   font-weight: 600;
-  border: 0.1rem solid;
+  border-radius: 0 0 0.8rem 0.8rem;
   font-size: 1.4rem;
+  box-shadow: 0.1rem 0.1rem 1rem gray;
 }
 
 .contenedor-txt h3{
@@ -11061,6 +11085,10 @@ main h2{
   color: #fff;
 }
 
+#datosConf h2{
+  text-shadow: 0.2rem 0.2rem 0.4rem gray;
+}
+
 #datosConf p:first-of-type{
   border: 0.4rem solid #0d1a82;
   width: 80%;
@@ -11075,10 +11103,10 @@ main h2{
   font-weight: 700;
 }
 
-
 #datosConf ul{
   font-size: 1.8rem;
-  width: 40%;
+  width: 55%;
+  padding-left: 12rem;
   margin: auto;
 }
 
@@ -11102,7 +11130,7 @@ main h2{
 
 /* sponsors */
 #contenedor-sponsors{
-  padding: 6rem 0;
+  padding-bottom: 6rem;
 }
 
 #contenedor-sponsors article{
@@ -11124,31 +11152,32 @@ main h2{
 /* formulario */
 #formulario{
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(319deg, rgba(106,127,241,0.2) 0%, rgba(54,83,239,0.4) 100%), url(../media/ba3.jpg);
-  
+  background: linear-gradient(197deg, rgba(72,99,242,0.1) 0%, rgba(68,85,181,0.3) 100%), url(../media/ba3.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 4rem;
-}
-
-#formulario *{
-  width: 50%;
-  margin: auto;
 }
 
 #formulario article{
+  width: 35%;
   font-weight: 600;
+  border-radius: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #formulario article p{
   font-size: 2rem;
   margin-top: 2rem;
+  text-align: center;
 }
 
 #formulario form{
+  width: 35%;
   display: flex;
   flex-direction: column;
+  padding: 4rem 0;
 }
 
 #formulario form *{
@@ -11156,12 +11185,44 @@ main h2{
   border-radius: 0.4rem;
   border: 0.1rem solid #000;
   padding: 0.8rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
+#formulario form label{
+  font-size: 1.7rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
+select{
+  margin-left: 2rem;
+}
 
+textarea{
+  width: 100%;
+  height: 16rem;
+  resize: none;
+}
 
+#formulario button{
+  width: 50%;
+  margin: auto;
+  background-color: var(--bs-blue);
+  color: #fff;
+  border: 0.1rem solid #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#formulario button:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#formulario button:active{
+  background-color: transparent;
+  border: #000;
+  transition: all 0.3s;
+}
 
 /* footer */
 footer{
@@ -11200,4 +11261,8 @@ footer div h4{
 
 footer div a{
   margin-left: 1.4rem;
+}
+
+footer div i{
+  margin-top: 1rem;
 }
