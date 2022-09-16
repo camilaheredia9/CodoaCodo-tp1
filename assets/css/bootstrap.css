@@ -32,12 +32,28 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* #############################################################3 */
 
 :root{
   --verde: rgb(78, 185, 78);
   --azul-oscuro: #0E185F;
   --amarillo: #f3d021;
+  --tipografia: roboto;
 }
 
 html{
@@ -48,6 +64,13 @@ img{
   width: 100%;
 }
 
+input,
+select,
+textarea{
+  border-radius: 0.4rem;
+  border: 0.1rem solid #000;
+  padding: 0.8rem;
+}
 
 /* ## header ## */
 
@@ -64,26 +87,27 @@ header nav a:hover{
   transition: all 0.3s;
 }
 
-header #a-logo{
+header .a-logo{
   font-size: 2rem;
 }
 
-header #a-logo:hover{
+header .a-logo:hover{
   transform: scale(1.2);
   transition: all 0.4s;
 }
 
-header #a-tickets{
+header .a-tickets{
   background-color: var(--amarillo);
   color: #000;
   border-radius: 1rem;
   margin-left: 1.4rem;
 }
 
-header #a-tickets:hover{
+header .a-tickets:hover{
   background-color: rgb(86, 189, 86);
   font-size: 1.8rem;
   transition: all 0.3s;
+  color: #000;
 }
 
 
@@ -180,13 +204,13 @@ main h2{
   width: 30%;
 }
 
-#contenedor-img{
+.contenedor-img{
   height: 42rem;
   overflow: hidden;
   position: relative;
 }
 
-#contenedor-img img{
+.contenedor-img img{
   position: relative;
   top: -9rem;
 }
@@ -195,7 +219,7 @@ main h2{
   top: -3rem;
 }
 
-#contenedor-txt{
+.contenedor-txt{
   padding: 2rem;
   color: var(--azul-oscuro);
   font-weight: 600;
@@ -203,17 +227,17 @@ main h2{
   font-size: 1.4rem;
 }
 
-#contenedor-txt h3{
+.contenedor-txt h3{
   font-size: 2.4rem;
   margin-bottom: 1rem;
 }
 
-#contenedor-txt span{
+.contenedor-txt span{
   background-color: var(--amarillo);
   border-radius: 0.6rem;
 }
 
-#contenedor-txt p{
+.contenedor-txt p{
   margin-top: 1rem;
 }
 
@@ -260,14 +284,69 @@ main h2{
   box-shadow: -0.1rem -0.1rem 0.6rem grey;
 }
 
-ul #primer-li span{
-  margin-right: 5.2rem;
+#datosConf ul .primer-li span{
+  margin-right: 5.6rem;
 }
 
 /* sponsors */
 #contenedor-sponsors{
+  padding: 6rem 0;
+}
+
+#contenedor-sponsors article{
+  display: flex;
+  height: auto;
+  padding: 4rem 0 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contenedor-sponsors img{
+  width: 14rem;
+}
+
+#contenedor-sponsors article img:first-of-type{
+  width: 10rem;
+}
+
+/* formulario */
+#formulario{
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(319deg, rgba(106,127,241,0.2) 0%, rgba(54,83,239,0.4) 100%), url(../media/ba3.jpg);
+  color: #fff;
   padding: 4rem;
 }
+
+#formulario *{
+  width: 50%;
+  margin: auto;
+}
+
+#formulario article{
+  font-weight: 600;
+}
+
+#formulario article p{
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+#formulario form{
+  display: flex;
+  flex-direction: column;
+}
+
+#formulario form *{
+  margin-bottom: 1.4rem;
+}
+
+
+
+
+
+
+
 
 /* ##########################################################3 */
 
