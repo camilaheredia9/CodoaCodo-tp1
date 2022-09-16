@@ -47,309 +47,6 @@
 
 
 
-/* #############################################################3 */
-
-:root{
-  --verde: rgb(78, 185, 78);
-  --azul-oscuro: #0E185F;
-  --amarillo: #f3d021;
-  --tipografia: roboto;
-}
-
-html{
-  font-size: 62.5%;
-}
-
-img{
-  width: 100%;
-}
-
-input,
-select,
-textarea{
-  border-radius: 0.4rem;
-  border: 0.1rem solid #000;
-  padding: 0.8rem;
-}
-
-/* ## header ## */
-
-header a{
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  padding: 1.8rem;
-  font-size: 1.6rem;
-}
-
-header nav a:hover{
-  font-size: 1.7rem;
-  transition: all 0.3s;
-}
-
-header .a-logo{
-  font-size: 2rem;
-}
-
-header .a-logo:hover{
-  transform: scale(1.2);
-  transition: all 0.4s;
-}
-
-header .a-tickets{
-  background-color: var(--amarillo);
-  color: #000;
-  border-radius: 1rem;
-  margin-left: 1.4rem;
-}
-
-header .a-tickets:hover{
-  background-color: rgb(86, 189, 86);
-  font-size: 1.8rem;
-  transition: all 0.3s;
-  color: #000;
-}
-
-
-header div:first-child{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url(../media/space.jpeg);
-  padding: 0 5rem 0 3rem;
-}
-
-header div img{
-  vertical-align: middle;
-  width: 14rem;
-}
-
-header section{
-  background: linear-gradient(-300deg, rgba(48, 47, 47, 0.4) 0%, rgba(23, 23, 23, 0.8) 100%), url(../media/ba1.jpg);
-  background-size: cover;
-  background-position-y: -16rem;
-  height: 85vh;
-  color: #fff;
-  padding: 14rem;
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-header section *{
-  width: 50%;
-}
-
-header section h1{
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-header section button{
-  width: 35%;
-  padding: 0.6rem;
-  border-radius: 1rem;
-  margin: 1rem 0 0 3rem;
-}
-
-header section div a{
-  font-size: 1.8rem;
-  color: #fff;
-}
-
-header section div button:first-child{
-  background-color: transparent;
-  border: 0.2rem solid #fff;
-
-}
-
-header section div button:last-child{
-  background-color: var(--verde);
-  border: none;
-}
-
-header section a:hover{
-  color: #fff;
-}
-
-header section button:hover{
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-/*## main ##*/
-
-/* oradores */
-main{
-  padding: 4rem 0;
-}
-
-main h2{
-  font-size: 4rem;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-#oradores{
-  min-height: 85vh;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#oradores article{
-  width: 30%;
-}
-
-.contenedor-img{
-  height: 42rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.contenedor-img img{
-  position: relative;
-  top: -9rem;
-}
-
-#oradores article:last-child img{
-  top: -3rem;
-}
-
-.contenedor-txt{
-  padding: 2rem;
-  color: var(--azul-oscuro);
-  font-weight: 600;
-  border: 0.1rem solid;
-  font-size: 1.4rem;
-}
-
-.contenedor-txt h3{
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
-}
-
-.contenedor-txt span{
-  background-color: var(--amarillo);
-  border-radius: 0.6rem;
-}
-
-.contenedor-txt p{
-  margin-top: 1rem;
-}
-
-/* datos conferencia */
-#datosConf{
-  background-image: url(../media/space.jpeg);
-  padding: 4rem 14rem;
-  color: #fff;
-}
-
-#datosConf p:first-of-type{
-  border: 0.4rem solid #0d1a82;
-  width: 80%;
-  margin: auto;
-  padding: 2rem;
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-#datosConf p span{
-  font-weight: 700;
-}
-
-
-#datosConf ul{
-  list-style: none;
-  font-size: 1.8rem;
-  width: 40%;
-  margin: auto;
-}
-
-#datosConf ul li{
-  margin-bottom: 2rem;
-}
-
-#datosConf ul span{
-  display: inline-block;
-  margin-right: 4rem;
-  background-color: transparent;
-  padding: 1.4rem;
-  font-weight: 600;
-  border-radius: 1rem;
-  box-shadow: -0.1rem -0.1rem 0.6rem grey;
-}
-
-#datosConf ul .primer-li span{
-  margin-right: 5.6rem;
-}
-
-/* sponsors */
-#contenedor-sponsors{
-  padding: 6rem 0;
-}
-
-#contenedor-sponsors article{
-  display: flex;
-  height: auto;
-  padding: 4rem 0 0;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#contenedor-sponsors img{
-  width: 14rem;
-}
-
-#contenedor-sponsors article img:first-of-type{
-  width: 10rem;
-}
-
-/* formulario */
-#formulario{
-  display: flex;
-  align-items: center;
-  background-image: linear-gradient(319deg, rgba(106,127,241,0.2) 0%, rgba(54,83,239,0.4) 100%), url(../media/ba3.jpg);
-  color: #fff;
-  padding: 4rem;
-}
-
-#formulario *{
-  width: 50%;
-  margin: auto;
-}
-
-#formulario article{
-  font-weight: 600;
-}
-
-#formulario article p{
-  font-size: 2rem;
-  margin-top: 2rem;
-}
-
-#formulario form{
-  display: flex;
-  flex-direction: column;
-}
-
-#formulario form *{
-  margin-bottom: 1.4rem;
-}
-
-
-
-
-
-
-
-
-/* ##########################################################3 */
-
 *,
 *::before,
 *::after {
@@ -11154,3 +10851,353 @@ textarea.form-control-lg {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
+
+/* #############################################################3 */
+
+:root{
+  --verde: rgb(78, 185, 78);
+  --azul-oscuro: #0E185F;
+  --amarillo: #f3d021;
+  --tipografia: roboto;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+img{
+  width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ## header ## */
+
+header a{
+  color: #fff;
+  padding: 0.6rem 1rem;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  border: none;
+}
+
+header nav a:hover,
+footer ul a:hover{
+  color: #fff;
+  border: 0.1rem solid #393E46;
+  border-radius: 0.2rem;
+  transition: all 0.4s;
+}
+
+header nav a:active,
+footer ul a:active{
+  color: #000;
+  background-color: #393E46;
+  transition: 0.3s;
+}
+
+header .a-logo{
+  font-size: 2rem;
+}
+
+header .a-logo:hover{
+  color: #fff;
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+
+header .a-tickets{
+  background-color: var(--amarillo);
+  color: #000;
+  border-radius: 0.2rem;
+}
+
+header .a-tickets:hover{
+  color: #fff;
+  background-color: rgb(86, 189, 86);
+  transition: all 0.3s;
+}
+
+header div:first-child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../media/space.jpeg);
+  padding: 0 5rem 0 3rem;
+}
+
+header div img{
+  vertical-align: middle;
+  width: 14rem;
+}
+
+header section{
+  background: linear-gradient(-300deg, rgba(48, 47, 47, 0.4) 0%, rgba(23, 23, 23, 0.8) 100%), url(../media/ba1.jpg);
+  background-size: cover;
+  background-position-y: -16rem;
+  height: 85vh;
+  color: #fff;
+  padding: 14rem;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+header section *{
+  width: 50%;
+}
+
+header section h1{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+header section button{
+  width: 35%;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  margin: 1rem 0 0 3rem;
+}
+
+header section div a{
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+header section div button:first-child{
+  background-color: transparent;
+  border: 0.2rem solid #fff;
+
+}
+
+header section div button:last-child{
+  background-color: var(--verde);
+  border: none;
+}
+
+header section a:hover{
+  color: #fff;
+}
+
+header section button:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/*## main ##*/
+
+/* oradores */
+main{
+  padding: 4rem 0;
+}
+
+main h2{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#oradores{
+  min-height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#oradores article{
+  width: 30%;
+}
+
+.contenedor-img{
+  height: 42rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.contenedor-img img{
+  position: relative;
+  top: -9rem;
+}
+
+#oradores article:last-child img{
+  top: -3rem;
+}
+
+.contenedor-txt{
+  padding: 2rem;
+  color: var(--azul-oscuro);
+  font-weight: 600;
+  border: 0.1rem solid;
+  font-size: 1.4rem;
+}
+
+.contenedor-txt h3{
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.contenedor-txt span{
+  background-color: var(--amarillo);
+  border-radius: 0.6rem;
+}
+
+.contenedor-txt p{
+  margin-top: 1rem;
+}
+
+/* datos conferencia */
+#datosConf{
+  background-image: url(../media/space.jpeg);
+  padding: 4rem 14rem;
+  color: #fff;
+}
+
+#datosConf p:first-of-type{
+  border: 0.4rem solid #0d1a82;
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#datosConf p span{
+  font-weight: 700;
+}
+
+
+#datosConf ul{
+  font-size: 1.8rem;
+  width: 40%;
+  margin: auto;
+}
+
+#datosConf ul li{
+  margin-bottom: 2rem;
+}
+
+#datosConf ul span{
+  display: inline-block;
+  margin-right: 4rem;
+  background-color: transparent;
+  padding: 1.4rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  box-shadow: -0.1rem -0.1rem 0.6rem grey;
+}
+
+#datosConf ul .primer-li span{
+  margin-right: 5.6rem;
+}
+
+/* sponsors */
+#contenedor-sponsors{
+  padding: 6rem 0;
+}
+
+#contenedor-sponsors article{
+  display: flex;
+  height: auto;
+  padding: 4rem 0 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contenedor-sponsors img{
+  width: 14rem;
+}
+
+#contenedor-sponsors article img:first-of-type{
+  width: 10rem;
+}
+
+/* formulario */
+#formulario{
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(319deg, rgba(106,127,241,0.2) 0%, rgba(54,83,239,0.4) 100%), url(../media/ba3.jpg);
+  
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 4rem;
+}
+
+#formulario *{
+  width: 50%;
+  margin: auto;
+}
+
+#formulario article{
+  font-weight: 600;
+}
+
+#formulario article p{
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+#formulario form{
+  display: flex;
+  flex-direction: column;
+}
+
+#formulario form *{
+  margin-bottom: 1.4rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #000;
+  padding: 0.8rem;
+  font-size: 2rem;
+}
+
+
+
+
+
+/* footer */
+footer{
+  background-image: url(../media/space.jpeg);
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 3rem 16rem;
+}
+
+footer a{
+  color: #fff;
+}
+
+footer ul{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+footer ul a{
+  padding: 0.4rem 0.8rem;
+}
+
+footer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+footer div h4{
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+footer div a{
+  margin-left: 1.4rem;
+}
