@@ -1,0 +1,433 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --verde: rgb(78, 185, 78);
+    --azul-oscuro: #0E185F;
+    --amarillo: #f3d021;
+    --tipografia: 'Montserrat', sans-serif;
+}
+  
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+  
+body{
+    overflow-x: hidden;
+    width: 100%;
+    font-family: var(--tipografia);
+}
+
+img{
+    width: 100%;
+}
+  
+ul{
+    list-style: none;
+}
+  
+a{
+    text-decoration: none;
+}
+
+.container-fluid{
+    padding: 0;
+}
+  
+/* ## header ## */
+header div:first-child{
+    min-height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../assets/media/space.jpeg);
+    padding: 0 5rem 0 3rem;
+}
+  
+header div img{
+    vertical-align: middle;
+    width: 14rem;
+}
+  
+header a{
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-left: 3rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.4rem;
+}
+  
+header nav a:hover,
+footer ul a:hover{
+    color: #fff;
+    border: 0.1rem solid #393E46;
+    border-radius: 0.2rem;
+    transition: all 0.4s;
+}
+  
+header nav a:active,
+footer ul a:active{
+    color: #000;
+    background-color: #393E46;
+    transition: 0.3s;
+}
+  
+header .a-logo{
+    font-size: 2rem;
+}
+  
+header .a-logo:hover{
+    color: #fff;
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+  
+header .a-tickets{
+    background-color: var(--amarillo);
+    color: #000;
+    border-radius: 0.2rem;
+}
+  
+header .a-tickets:hover{
+    color: #fff;
+    background-color: rgb(86, 189, 86);
+    transition: all 0.3s;
+}
+  
+header section{
+    background: linear-gradient(-300deg, rgba(48, 47, 47, 0.4) 0%, rgba(23, 23, 23, 0.8) 100%), url(../assets/media/ba1.jpg);
+    background-size: cover;
+    background-position-y: -16rem;
+    min-height: 85vh;
+    color: #fff;
+    padding: 14rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+  
+header section *{
+    width: 50%;
+}
+  
+header section h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+  
+header section div button{
+    width: 35%;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    margin: 1rem 0 0 3rem;
+}
+  
+header section div a{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 0;
+}
+  
+header section div button:first-child{
+    background-color: transparent;
+    border: 0.2rem solid #fff;
+}
+  
+header section div button:last-child{
+    background-color: var(--verde);
+    border: 0.2rem solid var(--verde);
+}
+  
+header section a:hover{
+    color: #fff;
+}
+  
+header section button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+  
+header section h1,
+header section p,
+header section div{
+    animation: backInDown;
+    animation-delay: 0.2s;
+    animation-duration: 2s;
+}
+  
+@media (max-width: 1200px){
+  
+    header section{
+      padding: 8rem;
+    }
+  
+    header section h1,
+    header section p,
+    header section div{
+      width: 70%;
+    }
+}
+  
+/*## main ##*/
+  
+/* oradores */
+  
+main h2{
+    font-size: 4rem;
+    text-align: center;
+    padding: 4rem 0;
+}
+  
+#oradores{
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+#oradores article{
+    width: 30%;
+    margin-bottom: 4rem;
+}
+  
+.contenedor-img{
+    height: 42rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.8rem 0.8rem 0 0;
+    box-shadow: 0.1rem 0.1rem 1rem gray;
+}
+  
+.contenedor-img img{
+    position: relative;
+    top: -9rem;
+}
+  
+#oradores article:last-child img{
+    top: -3rem;
+}
+  
+.contenedor-txt{
+    padding: 2rem;
+    color: var(--azul-oscuro);
+    font-weight: 400;
+    border-radius: 0 0 0.8rem 0.8rem;
+    font-size: 1.4rem;
+    box-shadow: 0.1rem 0.1rem 1rem gray;
+}
+  
+.contenedor-txt h3{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+  
+.contenedor-txt span{
+    background-color: var(--amarillo);
+    border-radius: 0.6rem;
+}
+  
+.contenedor-txt p{
+    margin-top: 1rem;
+}
+  
+/* datos conferencia */
+#datosConf{
+    background-image: url(../assets/media/space.jpeg);
+    padding: 4rem 14rem;
+    color: #fff;
+}
+  
+#datosConf h2{
+    text-shadow: 0.2rem 0.2rem 0.4rem gray;
+}
+  
+#datosConf p:first-of-type{
+    border: 0.4rem solid #0d1a82;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+  
+#datosConf p span{
+    font-weight: 700;
+}
+  
+#datosConf ul{
+    font-size: 1.8rem;
+    width: 55%;
+    padding-left: 12rem;
+    margin: auto;
+}
+  
+#datosConf ul li{
+    margin-bottom: 2rem;
+}
+  
+#datosConf ul span{
+    display: inline-block;
+    margin-right: 4rem;
+    background-color: transparent;
+    padding: 1.4rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    box-shadow: -0.1rem -0.1rem 0.6rem grey;
+}
+  
+#datosConf ul .primer-li span{
+    margin-right: 5.6rem;
+}
+  
+/* sponsors */
+#contenedor-sponsors{
+    padding-bottom: 6rem;
+}
+  
+#contenedor-sponsors article{
+    display: flex;
+    height: auto;
+    padding: 4rem 0 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+#contenedor-sponsors img{
+    width: 14rem;
+}
+  
+#contenedor-sponsors article img:first-of-type{
+    width: 10rem;
+}
+  
+/* formulario */
+#formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(197deg, rgba(72,99,242,0.1) 0%, rgba(68,85,181,0.3) 100%), url(../assets/media/ba3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+  
+#formulario article{
+    width: 35%;
+    font-weight: 700;
+    border-radius: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+  
+#formulario article p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+  
+#formulario form{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+  
+#formulario form *{
+    margin-bottom: 1.4rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #000;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+}
+  
+#formulario form label{
+    font-size: 1.7rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+  
+select{
+    margin-left: 2rem;
+}
+  
+textarea{
+    width: 100%;
+    height: 16rem;
+    resize: none;
+}
+  
+#formulario button{
+    width: 50%;
+    margin: auto;
+    background-color: var(--bs-blue);
+    color: #fff;
+    border: 0.1rem solid #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+  
+#formulario button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+  
+#formulario button:active{
+    background-color: transparent;
+    border: #000;
+    transition: all 0.3s;
+}
+  
+/* footer */
+#piePagina{
+    padding: 3rem 16rem;
+}
+
+footer{
+    background-image: url(../assets/media/space.jpeg);
+    color: #fff;
+    font-size: 1.6rem;
+}
+  
+footer a{
+    color: #fff;
+}
+  
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+  
+footer ul a{
+    padding: 0.4rem 0.8rem;
+    border: 0.1rem solid transparent;
+}
+  
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+  
+footer div h4{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+  
+footer div a{
+    margin-left: 1.4rem;
+}
+  
+footer div i{
+    margin-top: 1rem;
+}
