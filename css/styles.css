@@ -385,6 +385,152 @@ textarea{
     transition: all 0.3s;
 }
   
+/* main page tickets */
+.section-categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-categorias article{
+    width: 20vw;
+    margin: 4rem 2rem;
+    border: 0.2rem solid var(--amarillo);
+    border-radius: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.section-categorias article h2{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--azul-oscuro);
+    padding: 2rem 0;
+}
+
+.section-categorias article p,
+.section-categorias article span{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.section-categorias article span{
+    display: block;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.section-categorias .span-docs{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.section-venta{
+    width: 40%;
+    margin: 0 auto 3rem;
+}
+
+.section-venta h3,
+.section-venta p{
+    text-align: center;
+}
+
+.section-venta p{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 1rem 0 2rem;
+}
+
+.section-venta form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.section-venta form *{
+    padding: 0.6rem;
+    font-size: 1.4rem;
+}
+
+.item-100{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.section-venta form div{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.section-venta form label{
+    padding: 0;
+    margin-bottom: 0.4rem;
+}
+
+.section-venta form select{
+    margin: 0;
+}
+
+.section-venta form p{
+    background-color: var(--amarillo);
+    font-size: 1.5rem;
+}
+
+.section-venta form button:first-of-type{
+    background-color: rgb(142, 142, 142);
+    border: none;
+}
+
+.section-venta form button:last-of-type{
+    background-color: rgb(6, 177, 6);
+    border: none;
+}
+
+/* 
+.section-venta{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-venta p{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 1rem 0 2rem;
+}
+
+.section-venta form{
+    width: 60%;
+}
+
+.section-venta form div,
+.section-venta form input,
+.section-venta form p{
+    width: 100%;
+}
+
+.section-venta form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-venta form div input{
+    width: 48%;
+}
+
+form .box-entradas div{
+    display: flex;
+    flex-direction: column;
+}
+
+form .box-entradas div input,
+form .box-entradas div select{
+    width: 100%;
+} */
+
 /* footer */
 #piePagina{
     padding: 3rem 16rem;
